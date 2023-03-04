@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Vamos ver de onde você é?</h1>
+    <label for="nationality">País de Origem</label>
+    <input type="text" name="nationality" id="nationality" list="list-nationality">
+    <datalist id="list-nationality">
+        <option value="BRA">Brasil</option>
+        <option value="ARG">Argentina</option>
+        <option value="FRA">França</option>
+        <option value="ITA">Italia</option>
+        <option value="ESP">Espanha</option>
+        <option value="DIN">Dinamarca</option>
+    </datalist>
+        
+    <input id="btn" type="button" value="Verificar">
+    <div id="res"></div>
+
+    <script>
+        var res = document.querySelector('div#res')
+        var btn = document.querySelector('input#btn')
+        btn.addEventListener('click', verifyNationality)
+
+        function verifyNationality(){
+            var selected = document.querySelector('input#nationality').value
+            if(selected == 'BRA'){
+                res.innerHTML = '<p> Você é Brasileiro parça!</p>'
+            }else {
+                res.innerHTML = '<p>Você é estrangeiro, seja bem-vindo ao Brasil!</p>'
+            }
+        }
+    </script>
+</body>
+</html>
