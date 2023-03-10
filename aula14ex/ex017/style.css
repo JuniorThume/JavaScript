@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+* {
+    font: normal 1em Arial;
+}
+
+body {
+    background-color: lightskyblue;
+}
+
+header {
+    color: white;
+    text-align: center;
+    font-size: 2em;
+}
+
+section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.363);
+    margin: auto;
+}
+
+div#inputs{
+    text-align: left;
+}
+
+div#cont-inicio, div#cont-fim, div#cont-passo {
+    margin: 10px 0px;
+    font-size: 1em;
+}
+
+
+footer {
+    text-align: center;
+    font-style: italic;
+    font-size: 2em;
+    color: white;
+}

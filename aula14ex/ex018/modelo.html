@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Tabuada em tempo real</h1>
+    </header>
+    <section>
+        <p>&#x26A0 Apenas altere o valor da caixa</p>
+        <div id="inputs">
+            <label for="txtnum">Número: </label>
+            <input type="number" name="num" id="txtnum" step="1" required onchange="gerar()" >
+        </div>
+        <div id="tabuada">Aqui vai a tabuada...</div>
+    </section>
+    <footer>
+        <p>&copy;Curso em Vídeo</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

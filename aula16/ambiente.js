@@ -1,0 +1,17 @@
+function parimpar(n){
+    if(n%2==0){
+        return 'par'
+    }else {
+        return 'impar'
+    }
+}
+
+let res = parimpar(5);
+console.log(res)
+
+
+let oi = function(){
+    return 'Hello, world';
+}
+
+console.log(oi())

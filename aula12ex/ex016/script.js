@@ -10,7 +10,7 @@ function verifica(){
         alert('[ERROR] Verifique os dados e tente novamente')
     }else{
         var radsex = document.getElementsByName('radsex')
-        var idade = verificaAno(Number(ano.value))
+        var idade = verificaAno()
         var anos = fano - Number(ano.value)
         var sexo = undefined
         
@@ -21,12 +21,10 @@ function verifica(){
         }
         desc.innerHTML = `Foi identificada uma pessoa do sexo <strong>${sexo}</strong> com ${anos} anos!`
         img.src = `images/${idade}${sexo[0]}.jpg`
-        
-
     }
 }
 
-function verificaAno(ano){
+function verificaAno(){
     var idade = new Date().getFullYear()
     idade -= ano
     var faixa = undefined

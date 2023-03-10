@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+* {
+    font: normal 1em Arial;
+}
+
+body {
+    background-color: lightskyblue;
+}
+
+header {
+    color: white;
+    text-align: center;
+    font-size: 2em;
+}
+
+section {
+    font-size: 1.2em;
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.363);
+    margin: auto;
+}
+
+section > p {
+    font-size: .8em;
+    color: darkred;
+}
+
+div#tabuada {
+    margin: 10px 0px;
+}
+
+div > input[type='number'] {
+    width: 60px;
+}
+
+footer {
+    text-align: center;
+    font-style: italic;
+    color: white;
+    font-size: 2em;
+}
