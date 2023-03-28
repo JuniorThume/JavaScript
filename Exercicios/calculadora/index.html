@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Calculadora</h1>
+    </header>
+    <main>
+        <div id="calculadora">
+            <div id="disp">
+                <div id="sup_disp">
+                    <p id="oper"></p>
+                    <p id="val"></p>
+                </div>
+                <p id="old_val"></p>
+            </div>
+            <div id="buttons">
+                <div id="num_buttons">
+                    <input type="button" value="9">
+                    <input type="button" value="8">
+                    <input type="button" value="7">
+                    <input type="button" value="6">
+                    <input type="button" value="5">
+                    <input type="button" value="4">
+                    <input type="button" value="3">
+                    <input type="button" value="2">
+                    <input type="button" value="1">
+                    <input id="num_espec" type="button" value="0">
+                    <input type="button" value=".">
+                </div>
+                <div id="operators">
+                    <input type="button" value="+/-">
+                    <input id="clean_button" type="button" value="C">
+                    <input type="button" value="+">
+                    <input type="button" value="*">
+                    <input type="button" value="-">
+                    <input type="button" value="/">
+                    <input type="button" value="%">
+                    <input type="button" value="=">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Desenvolvido por Valmir Thume Junior</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

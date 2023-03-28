@@ -1,0 +1,171 @@
+@charset "UTF-8";
+
+:root{
+    --cor1: #023535;
+    --cor2: #015958;
+    --cor3: #008F8C;
+    --cor4: #D8FFDB;
+    --cor5: #C7FFED;
+
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html, body {
+    
+    background-color: var(--cor1);
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    font-size: 2em; 
+    color: var(--cor5);
+    height: 10%;
+    justify-self: center;
+}
+
+main {
+    display: flex;
+    margin-top: 2%;
+    flex-flow: column nowrap;
+    padding: 10px;
+    width: 50%;
+    border-radius: 10px 10px 0 0;
+    background-color:  var(--cor3);
+    max-width: 700px;
+}
+
+#convidado_conteiner {
+    margin-top: 5px;
+    display: flex;
+    margin: 5px;
+    padding: 2px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#convidado {
+    width: 50%;
+    line-height: 10%;
+    border-radius: 10px;
+    border: none;
+    padding: 0px 3px;
+    font-size: 1em;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+input[type="submit"]  {
+    margin-left: 2%;
+    padding: 0px 5px;
+    font-size: 1em;
+    background-color: var(--cor2);
+    color: var(--cor4);
+}
+
+input[type="submit"]:hover {
+    scale: 1.1;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+#convidados {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 5px;
+    width: 100%;
+    padding: 10px;
+    overflow: auto;
+}
+
+footer {
+    background-color: var(--cor5);
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px;
+    justify-content: space-between;
+    max-width: 700px;
+    border-radius: 0 0 10px 10px;
+}
+
+.contatos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+}
+
+.contatos a {
+    line-height: 100%;
+    margin-left: 5px;
+    text-decoration: none;
+    color: var(--cor1);
+}
+
+.contatos a:hover{
+    text-decoration: underline;
+}
+
+/*Class commons*/
+
+.input_convidado {
+    height: 3rem;
+    line-height: 10%;
+    border-radius: 10px;
+    border: none;
+}
+
+.convidado_adicionado {
+    background-color: var(--cor4);
+    padding: 3px;
+    border-radius: 5px;
+    display: flex;
+}
+
+.convidado_adicionado:hover::after {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    justify-self: flex-end;
+    translate: 110px -10px;
+    /*transform: translate(90px, -10px);*/
+    content: url(images/botao-x.png);
+}
+
+#popUp {
+    width: 100vw;
+    height:100vh;
+    translate: -0px -38px;
+    background-color: rgba(255, 255, 255, 0.562);
+    z-Index: 9999;
+    position : absolute;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction : row;
+    filter : blur;
+}
+
+.btn_popUp{
+    background-color: var(--cor1);
+    width: 10%;
+    height: 10%;
+    margin: 10px;
+    border-radius: 10px;
+    translate: 0px -50px;
+}
