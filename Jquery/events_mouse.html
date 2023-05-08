@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+
+		<title>Mouse Events</title>
+
+		<!-- bootstrap - link cdn -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+		<!-- jquery -->
+		<!--CDN JQUERY-->
+		<script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+	</head>
+
+	<body>
+		
+		<div id="div1" style="background-color: red; height: 300px; width: 300px; text-align: center; color: black; font-size: 2em;">
+			Mouse Events
+		</div>
+
+		<input type="text" name="texto" id="textoTest">
+		
+		<script type="text/javascript">
+			//click
+			//dblclick
+			//mousedown
+			//mouseout
+			//mouseover
+			$(document).ready(function() {
+				$("#div1").click(function() {
+					confirm("Evento de Mouse disparado")
+				})
+
+
+				//keydown
+				//keypress
+				//keyup
+				$("#textoTest").keyup((e) => {
+					alert(`'${e.key}' foi pressionada!`)
+				})
+			})
+
+
+		</script>
+	</body>
+</html>

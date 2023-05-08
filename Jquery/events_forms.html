@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+
+		<title>Forms Events</title>
+
+		<!-- bootstrap - link cdn -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+		<!-- jquery -->
+		<!--CDN JQUERY-->
+		<script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+	</head>
+
+	<body>
+
+		<input class="inputs" type="text" name="texto" id="textoTest">
+
+        <select name="ingredientes" id="select_ingred">
+            <option id="op1" value="">Tomate</option>
+            <option id="op2" value="">Cebola</option>
+            <option id="op3" value="">Frango</option>
+            <option id="op4" value="">Pimenta</option>
+            <option id="op5" value="">Arroz</option>
+        </select>
+		
+		<script type="text/javascript">
+			//change - campo é alterado
+            //focus - ganha o foco
+            //blur - perde o foco
+			$(document).ready(function() {
+				$('.inputs').blur(function () {
+                    alert("Input perdeu o foco")
+                })
+                
+                $("#select_ingred").change(function () {
+                    alert("Select teve a opção alterada")
+                })
+            })
+
+
+
+
+		</script>
+	</body>
+</html>
